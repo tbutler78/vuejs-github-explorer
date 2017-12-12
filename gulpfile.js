@@ -12,7 +12,7 @@ var buffer = require('vinyl-buffer');
 gulp.task('html', function() {
     gulp.src('src/*.html')
         .pipe(gulp.dest('dist'))
-        .pipe(connect.reload());;
+        .pipe(connect.reload());
 });
 
 gulp.task('css', function() {
@@ -25,7 +25,7 @@ gulp.task('css', function() {
 
     gulp.src(stylesheets)
         .pipe(concat('app.min.css'))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('fonts', function() {
